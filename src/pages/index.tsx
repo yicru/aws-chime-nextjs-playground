@@ -3,6 +3,7 @@ import {
   lightTheme,
   MeetingProvider,
   VideoTileGrid,
+  VideoInputControl,
   AudioInputControl,
   AudioOutputControl,
 } from 'amazon-chime-sdk-component-library-react'
@@ -22,6 +23,7 @@ export const Home: NextPage = () => {
             <MeetingManager />
             <LocalVideoToggle />
             <ScreenShareButton />
+            <VideoInputControl />
             <AudioInputControl />
             <AudioOutputControl />
           </div>
