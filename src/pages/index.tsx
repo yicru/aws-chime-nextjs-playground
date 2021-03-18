@@ -1,52 +1,32 @@
+import {
+  Grid,
+  lightTheme,
+  MeetingProvider,
+  VideoTileGrid,
+} from 'amazon-chime-sdk-component-library-react'
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
 import { NextPage } from 'next'
-import { MainLayout } from '../layouts/MainLayout'
-import { Title } from '../components/Title'
+import { MeetingManager } from '../components/VideoMeeting/MeetingManager'
+import { LocalVideoToggle } from '../components/VideoMeeting/LocalVideoToggle'
 
 export const Home: NextPage = () => {
   return (
-    <MainLayout className="flex justify-center items-center">
-      <div>
-        <Title className="text-gray-900" />
-        <div className="mt-4">
-          <p className="text-xl font-bold italic">This boilerplate includes</p>
-          <ul className="list-disc list-inside mt-4 space-y-4 text-xs font-mono">
-            <li>
-              <a
-                href="https://www.typescriptlang.org/"
-                className="bg-gray-200 py-1 px-2 rounded"
-              >
-                Typescript
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tailwindcss.com/"
-                className="bg-gray-200 py-1 px-2 rounded"
-              >
-                TailwindCSS
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://eslint.org/"
-                className="bg-gray-200 py-1 px-2 rounded"
-              >
-                ESLint
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://prettier.io/"
-                className="bg-gray-200 py-1 px-2 rounded"
-              >
-                Prettier
-              </a>
-            </li>
-          </ul>
+    <ThemeProvider theme={lightTheme}>
+      <MeetingProvider>
+        <div className="relative p-10 space-y-4 h-screen">
+          <div className="flex items-center space-x-4">
+            <MeetingManager />
+            <LocalVideoToggle />
+          </div>
+          <Grid>
+            <VideoTileGrid
+              noRemoteVideoView={<div>No one is sharing his video</div>}
+            />
+          </Grid>
         </div>
-      </div>
-    </MainLayout>
+      </MeetingProvider>
+    </ThemeProvider>
   )
 }
 

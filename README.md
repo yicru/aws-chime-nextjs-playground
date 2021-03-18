@@ -1,9 +1,5 @@
-# NextJS Typescript Boilerplate
+# AWS Chime Playground with NextJS
 
-Bootstrap a developer-friendly NextJS app configured with:
-
-- [Typescript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- Linting with [ESLint](https://eslint.org/)
-- Formatting with [Prettier](https://prettier.io/)
-- Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
+ref:
+- https://aws.github.io/amazon-chime-sdk-component-library-react/?path=/story/introduction--page
+- https://dev.classmethod.jp/articles/display-a-video-conference-by-incorporating-the-amazon-chime-sdk-into-the-react-app-on-the-local-environment/
