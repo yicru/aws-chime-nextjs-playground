@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components'
 import { NextPage } from 'next'
 import { MeetingManager } from '../components/VideoMeeting/MeetingManager'
 import { LocalVideoToggle } from '../components/VideoMeeting/LocalVideoToggle'
+import { ScreenShareButton } from '../components/VideoMeeting/ScreenShareButton'
 
 export const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ export const Home: NextPage = () => {
           <div className="flex items-center space-x-4">
             <MeetingManager />
             <LocalVideoToggle />
+            <ScreenShareButton />
           </div>
           <Grid>
             <VideoTileGrid
