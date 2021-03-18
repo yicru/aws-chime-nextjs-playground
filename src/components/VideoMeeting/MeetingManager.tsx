@@ -1,12 +1,21 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import type { Meeting, Attendee } from 'aws-sdk/clients/chime'
 import { useMeetingManager } from 'amazon-chime-sdk-component-library-react'
 import { BaseButton } from '../BaseButton'
+import { useRouter } from 'next/router'
 
 export const MeetingManager: React.VFC = () => {
   const [token, setToken] = useState('')
   const meetingManager = useMeetingManager()
+  const router = useRouter()
+
+  useEffect(() => {
+    const { token: queryToken } = router.query
+    if (typeof queryToken === 'string') {
+      setToken(queryToken)
+    }
+  }, [router])
 
   const joinMeeting = async () => {
     const { data } = await axios.get<{ Meeting: Meeting; Attendee: Attendee }>(
