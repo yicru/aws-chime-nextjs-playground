@@ -1,6 +1,11 @@
 import AWS from 'aws-sdk'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
+AWS.config.update({
+  accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
+})
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const token = req.query.token
 
