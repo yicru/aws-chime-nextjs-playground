@@ -17,7 +17,7 @@ export const Home: NextPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <MeetingProvider>
-        <div className="relative p-10 space-y-4 h-screen">
+        <div className="flex flex-col relative p-10 space-y-4 h-screen">
           <div className="flex items-center space-x-4">
             <MeetingManager />
             <LocalVideoToggle />
@@ -25,11 +25,13 @@ export const Home: NextPage = () => {
             <AudioInputControl />
             <AudioOutputControl />
           </div>
-          <Grid>
-            <VideoTileGrid
-              noRemoteVideoView={<div>No one is sharing his video</div>}
-            />
-          </Grid>
+          <div className="flex-1">
+            <Grid>
+              <VideoTileGrid
+                noRemoteVideoView={<div>No one is sharing his video</div>}
+              />
+            </Grid>
+          </div>
         </div>
       </MeetingProvider>
     </ThemeProvider>
