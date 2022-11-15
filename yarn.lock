@@ -424,10 +424,10 @@
     "@styled-system/core" "^5.1.2"
     "@styled-system/css" "^5.1.5"
 
-"@types/dom-mediacapture-record@^1.0.4":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@types/dom-mediacapture-record/-/dom-mediacapture-record-1.0.7.tgz#08bacca4296ef521d59049f43e65cf971bbf6be1"
-  integrity sha512-ddDIRTO1ajtbxaNo2o7fPJggpN54PZf1ZUJKOjto2ENMJE/9GKUvaw3ZRuQzlS/p0E+PnIcssxfoqYJ4yiXSBw==
+"@types/dom-mediacapture-record@^1.0.7":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@types/dom-mediacapture-record/-/dom-mediacapture-record-1.0.13.tgz#d13d81f1bd2c473dbc566b98ed774d6741548078"
+  integrity sha512-awMC2n4iRwJ6VWpQDA7dPqJhImeXHsVeEoQKWkdGB2cau+h/6erGoVre5Dk8p/DL1LIiLUcK6MnC3mibiKRRFg==
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
@@ -515,10 +515,10 @@
     "@types/react" "*"
     csstype "^3.0.2"
 
-"@types/ua-parser-js@^0.7.33":
-  version "0.7.35"
-  resolved "https://registry.yarnpkg.com/@types/ua-parser-js/-/ua-parser-js-0.7.35.tgz#cca67a95deb9165e4b1f449471801e6489d3fe93"
-  integrity sha512-PsPx0RLbo2Un8+ff2buzYJnZjzwhD3jQHPOG2PtVIeOhkRDddMcKU8vJtHpzzfLB95dkUi0qAkfLg2l2Fd0yrQ==
+"@types/ua-parser-js@^0.7.35":
+  version "0.7.36"
+  resolved "https://registry.yarnpkg.com/@types/ua-parser-js/-/ua-parser-js-0.7.36.tgz#9bd0b47f26b5a3151be21ba4ce9f5fa457c5f190"
+  integrity sha512-N1rW+njavs70y2cApeIw1vLMYXRwfBy+7trgavGuuTfOd7j1Yh7QTRc/yqsPl6ncokt72ZXuxEU0PiCp9bSwNQ==
 
 "@types/uuid@^7.0.3":
   version "7.0.4"
@@ -823,17 +823,18 @@ amazon-chime-sdk-component-library-react@^2.1.1:
     throttle-debounce "^2.3.0"
     uuid "^8.0.0"
 
-amazon-chime-sdk-js@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/amazon-chime-sdk-js/-/amazon-chime-sdk-js-2.6.0.tgz#7c22c4f8e72f3fe2994acfa0ec6edc51acd61079"
-  integrity sha512-wf8kpvkBsbAO1rfK/nNqjQgjzLEcUWby7E8+SWrSsbDI5UZ5tug6GwsFIE98SX6yLbIf63Ua/ENcaABrJ3vtuw==
+amazon-chime-sdk-js@^2.31.0:
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/amazon-chime-sdk-js/-/amazon-chime-sdk-js-2.31.0.tgz#b937f138ab73b8593c12ce2debb436697c95246d"
+  integrity sha512-5HzxQUzH9DSWyPHxozi6urlxUzAsB612MTcPnag/2KQpUL+HkobuqNV1A67Yuo2bHcIMLXq6ldaCWvzWYoOrXQ==
   dependencies:
-    "@types/dom-mediacapture-record" "^1.0.4"
-    "@types/ua-parser-js" "^0.7.33"
-    detect-browser "^5.1.0"
+    "@types/dom-mediacapture-record" "^1.0.7"
+    "@types/ua-parser-js" "^0.7.35"
+    detect-browser "^5.2.0"
+    pako "^2.0.4"
     protobufjs "~6.8.8"
     resize-observer "^1.0.0"
-    ua-parser-js "^0.7.24"
+    ua-parser-js "^1.0.1"
 
 anser@1.4.9:
   version "1.4.9"
@@ -1984,10 +1985,10 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-detect-browser@^5.1.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/detect-browser/-/detect-browser-5.2.0.tgz#c9cd5afa96a6a19fda0bbe9e9be48a6b6e1e9c97"
-  integrity sha512-tr7XntDAu50BVENgQfajMLzacmSe34D+qZc4zjnniz0ZVuw/TZcLcyxHQjYpJTM36sGEkZZlYLnIM1hH7alTMA==
+detect-browser@^5.2.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/detect-browser/-/detect-browser-5.3.0.tgz#9705ef2bddf46072d0f7265a1fe300e36fe7ceca"
+  integrity sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==
 
 detect-libc@^1.0.3:
   version "1.0.3"
@@ -4202,6 +4203,11 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
+pako@^2.0.4:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
+  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
+
 pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -5858,10 +5864,10 @@ typescript@^3.8.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
-ua-parser-js@^0.7.24:
-  version "0.7.24"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.24.tgz#8d3ecea46ed4f1f1d63ec25f17d8568105dc027c"
-  integrity sha512-yo+miGzQx5gakzVK3QFfN0/L9uVhosXBBO7qmnk7c2iw1IhL212wfA3zbnI54B0obGwC/5NWub/iT9sReMx+Fw==
+ua-parser-js@^1.0.1:
+  version "1.0.32"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.32.tgz#786bf17df97de159d5b1c9d5e8e9e89806f8a030"
+  integrity sha512-dXVsz3M4j+5tTiovFVyVqssXBu5HM47//YSOeZ9fQkdDKkfzv2v3PP1jmH6FUyPW+yCSn7aBVK1fGGKNhowdDA==
 
 union-value@^1.0.0:
   version "1.0.1"
